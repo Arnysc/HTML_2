@@ -8,29 +8,42 @@ body{
 }
 
 .logoHTML {
-    width: 200px;
+    width: 220px;
     height: auto;
     padding-left: 12px;
+    padding-top: 19px;
 }
 
 .logoCSS {
-    width: 225px;
+    width: 240px;
     height: auto;
+    padding: 0;
 }
 
 .logoJS {
-    width: 142px;
+    width: 190px;
     height: auto;
     padding-left: 45px;
+    padding-top: 18px;
 }
 
 .cards {
     border: 2px solid black;
     width: fit-content;
     /* Logica de las agujas del reloj */
-    padding: 0px 1em 0px 1em; 
+    padding: 1em 1em 2em 1em; 
     border-radius: 10%;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    /* align-items: center; */
+}
+
+.cards .title{
+    display: flex;         /* Añadir flexbox al contenedor de cards */
+    flex-direction: column; /* Asegurar que los elementos hijos se apilen verticalmente */
+    align-items: center;  
 }
 
 /* Cuando pase el mouse */
@@ -49,3 +62,17 @@ body{
     margin: auto;
     padding: 3em;
 }
+
+#cards-container {
+    width: 85vw;
+    margin: auto;
+    margin-top: 1.5em;
+    border: 5px solid rgb(113, 99, 99);
+    border-radius: 15px;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    /* Separacion entre los elementos */
+    justify-content: space-evenly;
+}
+
